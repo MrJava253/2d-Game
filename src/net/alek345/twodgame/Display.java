@@ -29,9 +29,14 @@ public class Display extends Canvas implements Runnable{
 		game.start();
 	}
 	
+	public static void print(String string){
+		System.out.println(string);
+	}
+	
 	public static void start(){
 		thread = new Thread(game, "Game");
 		thread.start();
+		running = true;
 	}
 
 	@Override
@@ -45,11 +50,9 @@ public class Display extends Canvas implements Runnable{
 
 	private void render() {
 		
-		
 	}
 
 	private void tick() {
-		
 		
 	}
 	
